@@ -8,14 +8,14 @@
 
 import Foundation
 
-struct Question {
-	let question: String
+struct Question: Equatable{
+	let questiontext: String
 	let asker: String
 	var answer: String?
 	var answerer: String?
 
-	init(question: String, asker: String, answer: String? = nil, answerer: String? = nil) {
-	self.question = question
+	init(questiontext: String, asker: String, answer: String? = nil, answerer: String? = nil) {
+	self.questiontext = questiontext
 	self.asker = asker
 	self.answer = answer
 	self.answerer = answerer
